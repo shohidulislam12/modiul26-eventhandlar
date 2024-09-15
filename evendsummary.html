@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h3 id="handalar status">Lorem ipsum dolor sit.</h3>
+    <p id="inputuser">defolt text</p>
+    <input type="text" name="" id="input-fild">
+    <button id="update">update</button>
+    <br>
+    <br>
+    <button onclick="handleonclick()">add onclick functiom</button>
+<button id="event-lisener">handle event by add event lisener</button>
+
+
+
+
+
+    <script>
+        function handleonclick(){
+           
+            const handlaerStatus=document.getElementById("handalar status");
+            handlaerStatus.innerText="yeah it is change"
+        }
+
+    //op2
+    document.getElementById('event-lisener').addEventListener('click',function(){
+
+        const handlerstatus=document.getElementById('handalar status');
+        handlerstatus.innerText="handle by addEvenklisener"
+    })
+    document.getElementById("update").addEventListener('click',function () {
+     const inputField=  document.getElementById('input-fild');
+     const inputText=inputField.value;
+ const p=document.getElementById('inputuser');
+ p.innerText=inputText
+ inputField.value=''
+    })
+
+    </script>
+</body>
+</html>

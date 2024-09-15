@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>exploring Bubble</h1>
+    <section id="list-container">
+ <ul id="list-ul">
+    <li id="iten-1">Lorem, ipsum.</li>
+    <li id="iten-2">Sint, illum!</li>
+    <li id="iten-3">Aut, illo.</li>
+    <li id="iten-4">Sit, ratione?</li>
+    <li id="iten-5">Pariatur, eius!</li>
+    <li id="iten-6">Ratione, molestias.</li>
+ </ul>
+
+
+
+    </section>
+
+    <script>
+        document.getElementById('iten-2').addEventListener('click' , function(event){
+            console.log('item 2 click');
+            //event.stopPropagation();
+           // event.stopImmediatePropagation()
+        })
+        document.getElementById('iten-2').addEventListener('click' , function(event){
+            console.log('item 2 click');
+            
+        })
+        document.getElementById('iten-2').addEventListener('click' , function(event){
+            console.log('item 2 secondclick');
+           
+        })
+        document.getElementById('list-ul').addEventListener('click' , function(){
+            console.log('click list');
+        })
+        document.getElementById('list-container').addEventListener('click' , function(){
+            console.log('click list-container');
+        })
+    </script>
+</body>
+</html>

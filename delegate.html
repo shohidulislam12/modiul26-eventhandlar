@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>exploring delegate</h1>
+    <section id="list-container">
+ <ul id="list-ul">
+    <li class="item">Lorem, ipsum.</li>
+    <li class="item">Sint, illum!</li>
+    <li class="item">Aut, illo.</li>
+    <li class="item">Sit, ratione?</li>
+    <li class="item">Pariatur, eius!</li>
+    <li class="item">Ratione, molestias.</li>
+ </ul>
+</section>
+<button id="add-item">add item</button>
+
+ <script>
+//     const items=document.getElementsByClassName('item');
+//   for(const item of items){
+//       item.addEventListener('click',function(event){
+
+
+//        event.target.parentNode.removeChild(event.target)
+//       })
+//   }
+
+document.getElementById('list-container').addEventListener('click',function(event){
+     event.target.parentNode.removeChild(event.target);
+     });
+
+  document.getElementById('add-item').addEventListener('click', function(){
+const container =document.getElementById('list-ul');
+const li=document.createElement("li");
+li.classList.add('item')
+li.innerHTML='lorem lorem';
+container.appendChild(li);
+
+
+  })
+
+ </script>
+</body>
+</html>

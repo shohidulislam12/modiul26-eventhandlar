@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add new comment</title>
+</head>
+<body>
+    <h1>please add your comment</h1>
+<div id="commenst">    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, corrupti vel quae omnis quidem, sunt aliquid placeat, ea voluptatem deleniti fugiat fugit. Nisi, minus explicabo rem nesciunt impedit itaque vitae iusto. Expedita accusamus quia omnis vero exercitationem, a perferendis sit beatae eius dignissimos doloribus id aliquam, quos animi cum placeat!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, corrupti vel quae omnis quidem, sunt aliquid placeat, ea voluptatem deleniti fugiat fugit. Nisi, minus explicabo rem nesciunt impedit itaque vitae iusto. Expedita accusamus quia omnis vero exercitationem, a perferendis sit beatae eius dignissimos doloribus id aliquam, quos animi cum placeat!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, corrupti vel quae omnis quidem, sunt aliquid placeat, ea voluptatem deleniti fugiat fugit. Nisi, minus explicabo rem nesciunt impedit itaque vitae iusto. Expedita accusamus quia omnis vero exercitationem, a perferendis sit beatae eius dignissimos doloribus id aliquam, quos animi cum placeat!</p>
+</div>
+
+<div>
+    <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+    <br> 
+    <button id="button-post">post</button>
+</div>
+
+
+<script>
+document.getElementById('button-post').addEventListener('click',function(){
+    const commentbox=document.getElementById('new-comment');
+const newCommenttext=commentbox.value;
+const placeofComment=document.getElementById('commenst')
+const newp=document.createElement('p');
+placeofComment.appendChild(newp);
+newp.innerHTML=newCommenttext;
+commentbox.value=''
+
+
+
+
+})
+
+
+</script>
+</body>
+</html>

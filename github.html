@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="secretinfu">secret infu</h1>
+    <input type="text" name="" id="deletconfarm" placeholder="plese write 'delete' for delet">
+    <button  id="delete" disabled>delete</button>
+
+
+    <script>
+        document.getElementById('deletconfarm').addEventListener('keyup',function(){
+            const text=event.target.value;
+            const deletbutton=document.getElementById('delete');
+            if(text==="delete"){
+                deletbutton.removeAttribute('disabled')
+            }
+            else{
+                deletbutton.setAttribute('disabled',true)
+            }
+        })
+document.getElementById('delete').addEventListener('click',function(){
+
+const secret=document.getElementById('secretinfu');
+secret.style.display='none'
+
+
+})
+
+    </script>
+</body>
+</html>
